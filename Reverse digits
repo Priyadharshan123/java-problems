@@ -1,0 +1,19 @@
+
+
+//User function Template for Java
+
+class Solution
+{
+    public long reverse_digit(long n)
+    {
+        // Code 
+         long rev=0;
+        long a;
+        while(n>0){
+            a=n%10;
+            rev=rev*10+a;
+            n=n/10;
+        }
+        return rev;
+    }
+}
