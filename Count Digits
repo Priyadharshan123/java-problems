@@ -1,0 +1,22 @@
+
+
+//User function Template for Java
+
+
+class Solution{
+    static int evenlyDivides(int N){
+        // code here
+        int count = 0;
+        int originalN = N; 
+
+        while (N > 0) {
+            int digit = N % 10; 
+            if (digit != 0 && originalN % digit == 0) { 
+                count++;
+            }
+            N = N / 10; 
+        }
+
+        return count;
+    }
+}
