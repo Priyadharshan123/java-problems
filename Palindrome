@@ -1,0 +1,25 @@
+
+
+//User function Template for Java
+
+class Solution
+{
+    public String is_palindrome(int n)
+    {
+        // Code here
+        int reversedNumber = 0;
+        int originalNumber = n;
+    while(n!=0){
+        
+            int remainder = n % 10;
+            reversedNumber = reversedNumber * 10 + remainder;
+            n /= 10;
+
+    }
+   if (originalNumber == reversedNumber) {
+          return("Yes");
+        } else {
+           return("No");
+        }
+}
+}
