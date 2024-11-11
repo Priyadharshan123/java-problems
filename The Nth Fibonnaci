@@ -1,0 +1,25 @@
+class Solution{
+    static int fib(int N){
+    
+        int a=0;
+        int b=1;
+        int c=0;
+        int i=2;
+        if(N==1){
+            return 1;
+        }
+        else if (N==0){
+            return 0;
+        }
+        else{
+        while(i<=N){
+            c=(a+b)%10;
+            a=b;
+            b=c;
+            i++;
+          
+        }
+        }
+        return c;
+    }
+}
